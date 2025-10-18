@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Product</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="gradient-bg">
+
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">➕ Add New Product</h2>
+
+        <form th:action="@{/save}" method="post" enctype="multipart/form-data" th:object="${product}" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Product Name</label>
+                <input type="text" th:field="*{name}" class="form-control" placeholder="Enter product name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="brand" class="form-label">Brand</label>
+                <input type="text" th:field="*{brand}" class="form-control" placeholder="Enter brand name" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" th:field="*{price}" class="form-control" placeholder="Enter price" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" th:field="*{quantity}" class="form-control" placeholder="Enter quantity" required>
+            </div>
+
+            <div class="col-md-12">
+                <label for="imageFile" class="form-label">Product Image</label>
+                <input type="file" name="imageFile" class="form-control" required>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary mt-3">Submit Product</button>
+            </div>
+        </form>
+    </div>
+	<footer class="bg-dark text-white text-center py-3 mt-5">
+	    <p>&copy; 2023 MyStore. All rights reserved.</p>
+	  </footer>
+
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

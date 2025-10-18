@@ -1,0 +1,100 @@
+/* Base Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #343a40;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+
+/* Gradient Wrapper */
+.gradient-bg {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Carousel */
+.carousel img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Table Images */
+.table img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 80px;
+}
+
+/* Alerts */
+.alert {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Select Dropdowns */
+select.form-select {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+/* Feature Section */
+.feature-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}

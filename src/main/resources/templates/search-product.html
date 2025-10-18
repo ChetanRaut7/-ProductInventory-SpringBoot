@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search Product</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="gradient-bg">
+
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-3">🔍 Search Product</h2>
+
+        <form action="/search-result" method="get" class="mb-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <input type="number" name="id" class="form-control" placeholder="Enter Product ID" required>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div th:if="${product != null}" class="text-center">
+            <h4>Product Found:</h4>
+            <p>Name: <span th:text="${product.name}"></span></p>
+            <p>Quantity: <span th:text="${product.quantity}"></span></p>
+            <p>Price: <span th:text="${product.totalPrice}"></span></p>
+            <img th:src="@{'/uploads/' + ${product.image}}" width="100" class="img-thumbnail"/>
+        </div>
+
+        <div th:if="${msg}" class="alert alert-warning text-center" th:text="${msg}"></div>
+    </div>
+	<footer class="bg-dark text-white text-center py-3 mt-5">
+	     <p>&copy; 2023 MyStore. All rights reserved.</p>
+	   </footer>
+	 </div>
+
+</body>
+</html>
