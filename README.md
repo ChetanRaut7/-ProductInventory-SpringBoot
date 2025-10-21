@@ -28,32 +28,7 @@ A Spring Boot application for managing tech product inventory. This demo allows 
 
 ## 📂 Folder Structure
 ProductInventory-Springboot/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── chetan/
-│   │   │           └── inventory/
-│   │   │               ├── controller/       # Handles HTTP requests
-│   │   │               ├── entity/           # JPA entities (Product.java, etc.)
-│   │   │               ├── repository/       # Spring Data JPA interfaces
-│   │   │               ├── service/          # Business logic
-│   │   │               └── InventoryApplication.java
-│   │   └── resources/
-│   │       ├── static/                      # CSS, JS, images
-│   │       ├── templates/                   # Thymeleaf HTML files
-│   │       │   ├── fragments/               # Reusable layout parts (navbar, footer)
-│   │       │   ├── home.html
-│   │       │   ├── product-list.html
-│   │       │   ├── add-product.html
-│   │       │   ├── search.html
-│   │       │   ├── about.html
-│   │       │   └── contact.html
-│   │       └── application.properties       # App configuration
-├── uploads/                                 # Uploaded product images
-├── .gitignore                               # Git ignore rules
-├── README.md                                # Project overview
-├── pom.xml                                  # Maven dependencies
+<pre>```textProductInventory-Springboot/├── src/│   ├── main/│   │   ├── java/│   │   │   └── com/│   │   │       └── chethanura/│   │   │           └── inventory/│   │   │               ├── controller/       # Handles HTTP requests│   │   │               ├── entity/           # JPA entities (Product.java, etc.)│   │   │               ├── repository/       # Spring Data JPA interfaces│   │   │               ├── service/          # Business logic│   │   │               └── InventoryApplication.java│   │   └── resources/│   │       ├── static/                      # CSS, JS, images│   │       ├── templates/                   # Thymeleaf HTML files│   │       │   ├── fragments/               # Reusable layout parts (navbar, footer)│   │       │   ├── home.html│   │       │   ├── product-list.html│   │       │   ├── add-product.html│   │       │   ├── search.html│   │       │   ├── about.html│   │       │   └── contact.html│   │       └── application.properties       # App configuration├── uploads/                                 # Uploaded product images├── .gitignore                               # Git ignore rules├── README.md                                # Project overview├── pom.xml                                  # Maven dependencies```</pre>
 
 
 
