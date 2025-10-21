@@ -3,6 +3,10 @@
 
 A Spring Boot application for managing tech product inventory. This demo allows users to add, edit, delete, and search products with image upload and pricing logic. Built with Thymeleaf, Bootstrap 5, and RESTful architecture.
 
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/oEmrC52DHdg/0.jpg)](https://youtu.be/oEmrC52DHdg?si=P1kcTS2WQTN4FXEE)
+
 ## 🚀 Features
 
 - Add, edit, delete products
