@@ -28,7 +28,7 @@ ProductInventory-Springboot/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
-│   │   │       └── chethanura/
+│   │   │       └── chetan/
 │   │   │           └── inventory/
 │   │   │               ├── controller/       # Handles HTTP requests
 │   │   │               ├── entity/           # JPA entities (Product.java, etc.)
